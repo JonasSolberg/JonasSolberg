@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+#navbar {
+
+  padding: 1em;
+  display: grid;
+  grid-auto-columns:1fr 1fr;
+
+}
+
+#links {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 1em;
+  text-align: center;
+
+}
+
+#Logo {
+  grid-column: 1fr;
+  padding: 0;
+  margin: 0;
+}
+
+a img {
+  max-height: 10vh;
+  max-width: 18vw;
+}
+
+.Link {
+  font-family: 'Roboto Mono', monospace;
+  text-decoration: none;
+  color: #5c51a6;
+  border-radius: 15px/15px;
+  padding: 5% 2% 3% 2%;
+  text-align: center;
+  width: 10vw;
+  height: 4vh;
+  font-size: 2vw;
+
+}
+
+#links .Link:hover {
+  color: #f2a71b;
+}
+
+
+/* Hele sliden*/
+.Slide {
+
+}
+
+/* Endre str på bildene*/
+.Slide img {
+  height: 90vh;
+  width: auto;
+  border-radius: 15px/15px;
+}
+
+/*Bildene i sliden*/
+.slideshow-container {
+  margin: 0 5%;
+}
+
+/* Dottene */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #cccccc;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #f2a71b;
+}
+
+#Nyheter {
+  margin:2.5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.Tekst {
+  display: block;
+  margin-left:auto;
+  margin-right: auto;
+  background-color: #ede8f3;
+  height: 30vh;
+  padding: 2%;
+  grid-column: 1fr;
+  border-radius: 15px/15px;
+  text-align: center;
+  margin-bottom: 5%;
+  width: 50%;
+
+
+}
+
+.Tekst h2 {
+  font-family:'Roboto Mono', monospace;
+}
+
+.NyBilde {
+  height: auto;
+  grid-column: 1fr;
+  border-radius: 15px/15px;
+  padding: 2%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
+}
+
+.NyBilde img {
+height: 30vh;
+border-radius: 15px/15px;
+}
+
+footer {
+  background: #ede8f3;
+  padding: 2% 0;
+  border-radius:15px/15px;
+  margin: 0 5%;
+
+}
+
+footer ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+footer ul li {
+  grid-column: 1fr;
+  list-style-type: none;
+  font-family:'Roboto Mono', monospace;
+  font-size: 1vw;
+  text-align: center;
+}

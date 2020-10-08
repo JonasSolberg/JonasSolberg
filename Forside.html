@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Attender</title>
+    <link rel="stylesheet" href="Style.css"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div id="navbar">
+          <div id="links">
+            <a href="Forside.html">
+              <img src="Bilder/Logo.png" alt="">
+            </a>
+            <a class="Link" href="Beskrivelse.html">appen</a>
+            <a class="Link" href="Data.html">dataen</a>
+            <a class="Link" href="OmOss.html">om oss</a>
+          </div>
+
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="Slide">
+        <div class="slideshow-container">
+          <div class="mySlides">
+            <img src="Bilder/Iphone.png" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <img src="Bilder/Fravær.png" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <img src="Bilder/3.jpg" style="width:100%">
+          </div>
+        </div>
+        <br>
+      </div>
+      <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+
+      <div id="Nyheter">
+        <div class="Tekst">
+          <h2>Ny Oppdatering!</h2>
+          <p>Attender 2.4 er nå tilgjenglig for Android og IOS.</p>
+          <p>2.3 kan fortsatt brukes intil videre.</p>
+        </div>
+        <div class="NyBilde">
+          <img src="Bilder/Skole.png">
+        </div>
+
+        <div class="NyBilde">
+          <img src="Bilder/Info.png" alt="">
+        </div>
+        <div class="Tekst">
+          <h2>Skole nr. 100!</h2>
+          <p>Attender er nå i bruk på 100 skoler i Norge!</p>
+          <p>327 skoler i verden bruker Attender totalt.</p>
+        </div>
+
+        <div class="Tekst">
+          <h2>New Rewards!</h2>
+          <p>Tre kinoer har inngått avtale med attender om å dele ut kinobilletter.</p>
+          <p>Kantine-passet gjelder nå også paninier.</p>
+          <p>Norli deler ut 10% rabattkoder (Disse kodene kan kun brukes en gang)</p>
+        </div>
+        <div class="NyBilde">
+          <img src="Bilder/Elever.png">
+        </div>
+
+        <div class="NyBilde">
+          <img src="Bilder/Krone.png" alt="">
+        </div>
+        <div class="Tekst">
+          <h2>Vinner av Skole-testen</h2>
+          <p>Attender vant 06.10.2020 prisen for nordens beste skoleapp!</p>
+          <p>Alle elever som bruker appen får en ekstra reward å løse inn denne uken!</p>
+        </div>
+      </div>
+
+
+    </main>
+    <footer>
+      <div>
+        <ul>
+          <li>
+            Retningslinjer for personvern
+          </li>
+          <li>
+            Bruk av informasjonskapsler
+          </li>
+          <li>Bruksvilkår</li>
+          <li>Juridisk Nettstedoversikt</li>
+        </ul>
+      </div>
+    </footer>
+
+    <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 5000); // Endre sekund mellom bildene 1000=1sek
+    }
+    </script>
+
+
+  </body>
+  </html>
