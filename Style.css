@@ -3,6 +3,14 @@ body {
   font-family: sans-serif;
 }
 
+h1 {
+  font-family: 'Roboto Mono', monospace;
+}
+
+h2 {
+  font-family: 'Roboto Mono', monospace;
+}
+
 #navbar {
 
   padding: 1em;
@@ -76,6 +84,29 @@ a img {
   transition: background-color 0.6s ease;
 }
 
+/* Hele sliden*/
+.Slide2 {
+
+}
+
+/* Endre str på bildene*/
+.Slide2 img {
+  width: auto;
+}
+
+/*Bildene i sliden*/
+
+/* Dottene */
+.dot2 {
+  height: 5px;
+  width: 5px;
+  margin: 0 ;
+  background-color: #cccccc;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
 .active {
   background-color: #f2a71b;
 }
@@ -121,6 +152,49 @@ a img {
 height: 30vh;
 border-radius: 15px/15px;
 }
+
+#Beskrivelse {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 5%;
+  background-color: #ede8f3;
+  border-radius: 15px/15px;
+  padding: 2.5%;
+}
+
+#Beskrivelse .BeskrivelseInfo {
+  grid-column: 1fr;
+  margin-left: 2.5%;
+  margin-bottom: 2.5%;
+  background-color: white;
+  padding: 5%;
+  border-radius: 15px/15px;
+  font-size: 1.5vw;
+}
+
+#Beskrivelse .BeskrivelseInfo h2 {
+  text-align: center;
+}
+
+
+
+
+#Beskrivelse .BeskrivelseBilde {
+  grid-column: 1fr;
+  margin-bottom: 2.5%;
+  margin-right: 2.5%;
+}
+
+
+
+#Beskrivelse .BeskrivelseBilde img {
+  display: block;
+  height: 50vh;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px/10px;
+}
+
 
 footer {
   background: #ede8f3;
