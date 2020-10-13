@@ -6,9 +6,10 @@
   <head>
     <meta charset="utf-8">
     <title>Attender</title>
-    <link rel="stylesheet" href="Style.css"></link>
+    <link rel="stylesheet" href="Style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
   </head>
+
   <body>
     <header>
       <nav>
@@ -24,9 +25,43 @@
         </div>
       </nav>
     </header>
+
     <main>
-<p>heiehi</p>
+      <h1>Om oss</h1>
+      <img src="Bilder/oss.png" alt="Teamet vårt" width="100%"> <!--lol, aaalt for stort-->
+      <p class="Tekst">Vi i Attender er en liten gruppe som jobber sammen for utdanningen til den yngre generasjonen. Utdanning er en stor del av oppveksten og dessverre faller mange ut. <a href=«https://www.ssb.no/vgogjen» class="link">Over 20% bruker mer enn 6 år, eller fullfører ikke videregående i det hele tatt, (Ssb, n.d.)</a> noe som ofte har store konsekvenser for resten av livet deres. Vi i Attender jobber for å være proaktive for ungdom som har det vanskelig i skolen, og vi mener at appen attender vil kunne gjøre nettopp dette.</p> <!--vet ikke om det er riktig class a bruke, men ja-->
+
+      <div class="content">
+        <form class="form">
+          <h2>Kontakt oss</h2>
+
+          <div class="top-form">
+            <div class="inner-form">
+              <label type="text">Fornavn</label>
+              <input type="text" placeholder="Skriv inn fornavn">
+            </div>
+            <div class="inner-form">
+              <label type="text">Etternavn</label>
+              <input type="text" placeholder="Skriv inn etternavn">
+            </div>
+            <div class="inner-form">
+              <label type="text">Epost</label>
+              <input type="email" placeholder="Skriv inn Epost">
+            </div>
+          </div>
+
+          <div class="bottom-form">
+            <div>
+              <label>Melding</label>
+              <textarea placeholder="Still oss et spørsmål eller gi oss en tilbakemelding"></textarea>
+            </div>
+          </div>
+
+          <input id="input" type="submit" value="Send">
+        </form>
+      </div>
     </main>
+
     <footer>
       <div>
         <ul>
@@ -41,5 +76,6 @@
         </ul>
       </div>
     </footer>
+
   </body>
   </html>

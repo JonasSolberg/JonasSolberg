@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-family: 'Roboto Mono', monospace;
+}
+
+h2 {
+  font-family: 'Roboto Mono', monospace;
+}
+
+
+#navbar {
+
+  padding: 1em;
+  display: grid;
+  grid-auto-columns:1fr 1fr;
+
+}
+
+#links {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 1em;
+  text-align: center;
+
+}
+
+#Logo {
+  grid-column: 1fr;
+  padding: 0;
+  margin: 0;
+}
+
+.flexbox-container{
+display: flex;
+justify-content: center;
+justify-content: space-around;
+}
+
+.flexbox-item{
+  width: 400px;
+  margin: 10px;
+  /*border: 3px solid black;
+  background-color: gray;*/
+}
+
+.flexbox-item-1{
+  min-height: 400px;
+}
+/*.flexbox-item-2{
+  min-height: 200px;
+}*/
+.flexbox-item-3{
+  min-height: 300px;
+}
