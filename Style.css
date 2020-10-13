@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: sans-serif;
-  background-image: url("Bilder/NOe.png");
+  background-image: url("Bilder/NyTreLil.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -187,6 +187,11 @@ border-radius: 15px/15px;
   margin-right: 2.5%;
 }
 
+#Beskrivelse .BeskrivelseInfo ul li {
+ list-style-type: none;
+ font-family:'Roboto Mono', monospace;
+}
+
 
 
 #Beskrivelse .BeskrivelseBilde img {
@@ -232,6 +237,13 @@ flex-wrap: wrap;
   padding: 2%;
 border-radius: 15px/15px;
 
+}
+
+#BildeOmOss {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60vw;
 }
 
 
