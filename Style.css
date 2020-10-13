@@ -122,6 +122,7 @@ a img {
 }
 
 .Tekst {
+  grid-column: 1fr;
   display: block;
   margin-left:auto;
   margin-right: auto;
@@ -137,6 +138,11 @@ a img {
 
 .Tekst h2 {
   font-family:'Roboto Mono', monospace;
+  font-size: 2vw;
+}
+
+.Tekst p {
+  font-size: 1.25vw;
 }
 
 .NyBilde {
@@ -325,4 +331,15 @@ footer ul li {
 #input[type=submit]:hover  {
   background-color: #6B62A6;
   border-color: #5C51A6;
+}
+@media screen and (max-width: 700px) {
+  #Nyheter {
+    grid-template-columns: 1fr;
+  }
+
+  #Beskrivelse {
+    grid-template-columns: 1fr;
+  }
+
+
 }
