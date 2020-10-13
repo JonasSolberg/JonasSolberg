@@ -1,6 +1,9 @@
 body {
   margin: 0;
   font-family: sans-serif;
+  background-image: url("Bilder/NOe.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 h1 {
@@ -36,6 +39,7 @@ h2 {
 a img {
   max-height: 10vh;
   max-width: 18vw;
+  border-radius: 20px/20px;
 }
 
 .Link {
