@@ -235,24 +235,22 @@ flex-wrap: wrap;
   background: #ede8f3;
   margin: 5%;
   padding: 2%;
-border-radius: 15px/15px;
-
+  border-radius: 15px/15px;
 }
 
 #BildeOmOss {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 60vw;
+  width: 75vw;
+  border-radius:15px/15px;
 }
-
 
 footer {
   background: #ede8f3;
   padding: 2% 0;
   border-radius:15px/15px;
-  margin: 0 5%;
-
+  margin: 0 5% 1%;
 }
 
 footer ul {
@@ -280,16 +278,14 @@ footer ul li {
 }
 
 .content {
-  display: block;
-  margin-left:auto;
-  margin-right: auto;
   background-color: #ede8f3;
+  display: block;
+  margin: 5% auto 5% auto;
   padding: 2%;
   grid-column: 1fr;
   border-radius: 15px/15px;
   text-align: center;
   width: 50%;
-  margin-bottom: 10px;
 }
 
 /*Hele formen*/
@@ -299,11 +295,15 @@ footer ul li {
 
 .top-form {
   text-align: left;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   width: 100%;
   min-height: 65px;
   margin-left: 10px;
+}
+
+.inner-form{
+  grid-column: 1fr;
 }
 
 .bottom-form {
@@ -329,16 +329,14 @@ footer ul li {
   outline: none;
 }
 
-.top-form,
-.inner-form {
-  margin-right: 5%;
-}
-
 .bottom-form textarea {
   height: 80px;
 }
 
 #input[type=submit] {
+  font-size: 1vw;
+  font-family: 'Roboto Mono', monospace;
+  letter-spacing: 0.2vw;
   text-transform: uppercase;
   text-align: center;
   color: white;
@@ -353,4 +351,14 @@ footer ul li {
 #input[type=submit]:hover  {
   background-color: #6B62A6;
   border-color: #5C51A6;
+}
+
+.KontaktformInput {
+  font-size: 0.9vw;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.KontaktformTekst {
+  font-size: 1.3vw;
+  font-family: 'Roboto Mono', monospace;
 }
