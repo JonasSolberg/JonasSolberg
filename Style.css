@@ -207,29 +207,29 @@ border-radius: 15px/15px;
 #overskrift{
   text-align: center;
 }
-.flexbox-container{
-display: flex;
-justify-content: center;
-justify-content: space-around;
-flex-wrap: wrap;
+#BeskrivelseTekst{
+  background-color: blue;
+}
+#GridData{
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-column-gap: 0%;
 }
 
-.flexbox-item{
-  width: 400px;
-  margin: 10px;
-  padding-top: 30px;
-}
+.GridDataInfo{
+  grid-column: 1fr;
+  padding-left: 50%;
+  padding-top: 10%;
+  padding-bottom: 5%; 
 
-.flexbox-item-1{
-  min-height: 400px;
-  margin-left: 100px;
 
 }
-
-.flexbox-item-2{
-  min-height: 300px;
-  min-width: 200px;
-}
+.GridDataInfoBilde{
+  grid-column: 1fr;
+  padding-left: 20%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  }
 
 /* slutt skole */
 .TekstOmOss {
