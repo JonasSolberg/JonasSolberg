@@ -211,28 +211,14 @@ border-radius: 15px/15px;
 #overskrift{
   text-align: center;
 }
-.flexbox-container{
-display: flex;
-justify-content: center;
-justify-content: space-around;
-flex-wrap: wrap;
+
+#GridData{
+display: grid;
+grid-template-columns: 1fr 1fr;
 }
 
-.flexbox-item{
-  width: 400px;
-  margin: 10px;
-  padding-top: 30px;
-}
-
-.flexbox-item-1{
-  min-height: 400px;
-  margin-left: 100px;
-
-}
-
-.flexbox-item-2{
-  min-height: 300px;
-  min-width: 200px;
+.GridDataInfo{
+  grid-column: 1fr;
 }
 
 /* slutt skole */
