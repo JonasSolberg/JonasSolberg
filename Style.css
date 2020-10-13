@@ -196,7 +196,35 @@ border-radius: 15px/15px;
   margin-right: auto;
   border-radius: 10px/10px;
 }
+/* For skolen*/
+#overskrift{
+  text-align: center;
+}
+.flexbox-container{
+display: flex;
+justify-content: center;
+justify-content: space-around;
+flex-wrap: wrap;
+}
 
+.flexbox-item{
+  width: 400px;
+  margin: 10px;
+  padding-top: 30px;
+}
+
+.flexbox-item-1{
+  min-height: 400px;
+  margin-left: 100px;
+
+}
+
+.flexbox-item-2{
+  min-height: 300px;
+  min-width: 200px;
+}
+
+/* slutt skole */
 .TekstOmOss {
   font-size: 1.5vw;
   background: #ede8f3;
