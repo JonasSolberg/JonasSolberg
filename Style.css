@@ -1,5 +1,5 @@
 
-/* Generelt for alle sidene*/
+/* ------------------------------------------Generelt for alle sidene*/
 body {
   margin: 0;
   font-family: sans-serif;
@@ -156,7 +156,7 @@ footer ul li {
   text-align: center;
 }
 
-/* Beskrivelse side*/
+/* --------------Beskrivelse side.------------------*/
 
 /* Hele sliden*/
 .Slide2 {
@@ -232,7 +232,7 @@ footer ul li {
   border-radius: 10px/10px;
 }
 
-/* For skolen/data*/
+/* --------------------------------------------------------For skolen/data*/
 #overskrift{
   text-align: center;
 }
@@ -246,16 +246,8 @@ grid-template-columns: 1fr 1fr;
   grid-column: 1fr;
 }
 
-/* slutt skole */
-.TekstOmOss {
-  font-size: 1.5vw;
-  background: #ede8f3;
-  margin: 5%;
-  padding: 2%;
-  border-radius: 15px/15px;
-}
 
-/* Om Oss side*/
+/* -----------------------------------------------------------Om Oss side*/
 
 #BildeOmOss {
   display: block;
@@ -263,6 +255,14 @@ grid-template-columns: 1fr 1fr;
   margin-right: auto;
   width: 90vw;
   border-radius:15px/15px;
+}
+
+.TekstOmOss {
+  font-size: 1.5vw;
+  background:#ede8f3;
+  margin: 5%;
+  padding: 2%;
+  border-radius: 15px/15px;
 }
 
 
@@ -363,7 +363,7 @@ grid-template-columns: 1fr 1fr;
 >>>>>>> 09e2ec6050f1190252c93c0903180b3f763b1a20
 }
 
-/* @media for alle sidene*/
+/* --------------------------------------------------------------@media for alle sidene*/
 
 @media screen and (max-width: 700px) {
   #Nyheter {
