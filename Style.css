@@ -1,3 +1,5 @@
+
+/* Generelt for alle sidene*/
 body {
   margin: 0;
   font-family: sans-serif;
@@ -88,33 +90,6 @@ a img {
   transition: background-color 0.6s ease;
 }
 
-/* Hele sliden*/
-.Slide2 {
-
-}
-
-/* Endre str på bildene*/
-.Slide2 img {
-  width: auto;
-}
-
-/*Bildene i sliden*/
-
-/* Dottene */
-.dot2 {
-  height: 5px;
-  width: 5px;
-  margin: 0 ;
-  background-color: #cccccc;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active {
-  background-color: #f2a71b;
-}
-
 #Nyheter {
   margin:2.5%;
   display: grid;
@@ -159,6 +134,55 @@ a img {
 .NyBilde img {
 height: 30vh;
 border-radius: 15px/15px;
+}
+
+footer {
+  background: #ede8f3;
+  padding: 2% 0;
+  border-radius:15px/15px;
+  margin: 0 5% 1%;
+}
+
+footer ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+footer ul li {
+  grid-column: 1fr;
+  list-style-type: none;
+  font-family:'Roboto Mono', monospace;
+  font-size: 1vw;
+  text-align: center;
+}
+
+/* Beskrivelse side*/
+
+/* Hele sliden*/
+.Slide2 {
+
+}
+
+/* Endre str på bildene*/
+.Slide2 img {
+  width: auto;
+}
+
+/*Bildene i sliden*/
+
+/* Dottene */
+.dot2 {
+  height: 5px;
+  width: 5px;
+  margin: 0 ;
+  background-color: #cccccc;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #f2a71b;
 }
 
 #Beskrivelse {
@@ -207,7 +231,8 @@ border-radius: 15px/15px;
   margin-right: auto;
   border-radius: 10px/10px;
 }
-/* For skolen*/
+
+/* For skolen/data*/
 #overskrift{
   text-align: center;
 }
@@ -230,32 +255,14 @@ grid-template-columns: 1fr 1fr;
   border-radius: 15px/15px;
 }
 
+/* Om Oss side*/
+
 #BildeOmOss {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 90vw;
   border-radius:15px/15px;
-}
-
-footer {
-  background: #ede8f3;
-  padding: 2% 0;
-  border-radius:15px/15px;
-  margin: 0 5% 1%;
-}
-
-footer ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-footer ul li {
-  grid-column: 1fr;
-  list-style-type: none;
-  font-family:'Roboto Mono', monospace;
-  font-size: 1vw;
-  text-align: center;
 }
 
 
@@ -344,15 +351,8 @@ footer ul li {
   background-color: #6B62A6;
   border-color: #5C51A6;
 }
-<<<<<<< HEAD
-@media screen and (max-width: 700px) {
-  #Nyheter {
-    grid-template-columns: 1fr;
-  }
 
-  #Beskrivelse {
-    grid-template-columns: 1fr;
-  }
+
 
 
 =======
@@ -367,3 +367,14 @@ footer ul li {
   font-family: 'Roboto Mono', monospace;
 >>>>>>> 09e2ec6050f1190252c93c0903180b3f763b1a20
 }
+
+/* @media for alle sidene*/
+
+@media screen and (max-width: 700px) {
+  #Nyheter {
+    grid-template-columns: 1fr;
+  }
+
+  #Beskrivelse {
+    grid-template-columns: 1fr;
+  }
