@@ -111,13 +111,13 @@ a img {
   margin-left:auto;
   margin-right: auto;
   background-color: #ede8f3;
-  height: 30vh;
   padding: 2%;
   grid-column: 1fr;
   border-radius: 15px/15px;
   text-align: center;
   margin-bottom: 5%;
-  width: 50%;
+  max-width: 25vw;
+  max-height: 40vh;
 }
 
 .Tekst h2 {
@@ -141,7 +141,8 @@ a img {
 }
 
 .NyBilde img {
-height: 30vh;
+max-width: 25vw;
+max-height: 40vh;
 border-radius: 15px/15px;
 }
 
@@ -220,6 +221,10 @@ footer ul li {
   padding: 5%;
   border-radius: 15px/15px;
   font-size: 1.5vw;
+  max-width: 40vw;
+  display: block;
+  margin-left: auto;
+  margin-right:auto;
 }
 
 #Beskrivelse .BeskrivelseInfo h2 {
@@ -244,7 +249,7 @@ footer ul li {
 
 #Beskrivelse .BeskrivelseBilde img {
   display: block;
-  height: 50vh;
+  max-width: 17vw;
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px/10px;
@@ -383,11 +388,31 @@ grid-template-columns: 1fr 1fr;
 
 /* --------------------------------------------------------------@media for alle sidene*/
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   #Nyheter {
     grid-template-columns: 1fr;
+  }
+  #Nyheter #NyheterOverskrift {
+    grid-column-start: 1;
+    grid-column-end: 2;
   }
 
   #Beskrivelse {
     grid-template-columns: 1fr;
   }
+
+  #Beskrivelse #AppOverskrift {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  footer ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  footer ul li {
+    padding-bottom: 2.5%;
+  }
+
+
+}
