@@ -10,6 +10,7 @@ body {
 
 h1 {
   font-family: 'Roboto Mono', monospace;
+  font-size: 3vw;
 }
 
 h2 {
@@ -61,6 +62,8 @@ a img {
   color: #f2a71b;
 }
 
+/*----------------------------------------------------------Forside */
+
 
 /* Hele sliden*/
 .Slide {
@@ -94,6 +97,12 @@ a img {
   margin:2.5%;
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+#Nyheter #NyheterOverskrift {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: center;
 }
 
 .Tekst {
@@ -158,6 +167,8 @@ footer ul li {
 
 /* --------------Beskrivelse side.------------------*/
 
+
+
 /* Hele sliden*/
 .Slide2 {
 
@@ -187,11 +198,18 @@ footer ul li {
 
 #Beskrivelse {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   margin: 5%;
   background-color: #ede8f3;
   border-radius: 15px/15px;
   padding: 2.5%;
+}
+
+#Beskrivelse #AppOverskrift {
+  grid-column-start: 1;
+  grid-column-end:3;
+  text-align: center;
+  padding-bottom: 2.5%;
 }
 
 #Beskrivelse .BeskrivelseInfo {
