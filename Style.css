@@ -296,12 +296,12 @@ grid-template-columns: 1fr 1fr;
   width: 60%;
 }
 
-/*Hele formen*/
-.form {
+/*Kontaktskjema*/
+.skjema {
   width: 100%;
 }
 
-.top-form {
+.topp {
   text-align: left;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -310,20 +310,20 @@ grid-template-columns: 1fr 1fr;
   margin-left: 10px;
 }
 
-.inner-form{
+.inner{
   grid-column: 1fr;
   width: 85%;
 }
 
-.bottom-form {
+.bunn {
   text-align: left;
   width: 95%;
   min-height: 65px;
   margin: 10px;
 }
-.form input[type=text],
-.form input[type=email],
-.form textarea {
+.skjema input[type=text],
+.skjema input[type=email],
+.skjema textarea {
   border: 2px solid #fff;
   padding: 10px 5px;
   outline: none;
@@ -332,13 +332,13 @@ grid-template-columns: 1fr 1fr;
   transition: all 0.2s ease;
 }
 
-.form input:focus,
-.form textarea:focus {
+.skjema input:focus,
+.skjema textarea:focus {
   border-color: #4E41A6;
   outline: none;
 }
 
-.bottom-form textarea {
+.bunn textarea {
   height: 80px;
 }
 
@@ -360,12 +360,12 @@ grid-template-columns: 1fr 1fr;
   border-color: #5C51A6;
 }
 
-.KontaktformInput {
+.KontaktskjemaInput {
   font-size: 0.9vw;
   font-family: 'Roboto Mono', monospace;
 }
 
-.KontaktformTekst {
+.KontaktskjemaTekst {
   font-size: 1.3vw;
   font-family: 'Roboto Mono', monospace;
 >>>>>>> 09e2ec6050f1190252c93c0903180b3f763b1a20
@@ -396,9 +396,5 @@ grid-template-columns: 1fr 1fr;
 
   footer ul li {
     padding-bottom: 2.5%;
-  }
-
-  top-form {
-    grid-template-columns: 1fr;
   }
 }
