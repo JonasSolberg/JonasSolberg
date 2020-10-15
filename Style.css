@@ -362,10 +362,11 @@ padding: 5% 0;
   margin-bottom: 2%;
   padding: 2%;
   font-size: 1.5vw;
-
   background-color: #5c51a6;
   border-radius: 10px/10px;
   border: 1px solid #5c51a6;
+  text-decoration: none;
+  color: black;
 }
 
 #Knapp:active {
