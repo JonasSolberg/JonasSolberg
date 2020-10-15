@@ -20,7 +20,7 @@
               <img src="Bilder/Logo.png" alt="">
             </a>
             <a class="Link" href="Beskrivelse.html">appen</a>
-            <a class="Link" href="Skolen.html">skolen</a>
+            <a class="Link" href="skolen.html">skolen</a>
             <a class="Link" href="OmOss.html">om oss</a>
           </div>
         </div>
@@ -28,37 +28,36 @@
     </header>
 
     <main>
-      <h1>Om oss</h1>
-      <img src="Bilder/OmOssMedOss.png" alt="Teamet vårt" id="BildeOmOss">
+
+      <img src="Bilder/OmOssMedOss.png" alt="Teamet vårt" width="100%" id="BildeOmOss">
+      <h1 id="OmOssOverskirft">Om oss</h1>
+
       <p class="TekstOmOss">Vi i Attender er en liten gruppe som jobber sammen for utdanningen til den yngre generasjonen. Utdanning er en stor del av oppveksten og dessverre faller mange ut. <a href=«https://www.ssb.no/vgogjen» class="link">Over 20% bruker mer enn 6 år, eller fullfører ikke videregående i det hele tatt, (Ssb, n.d.)</a> noe som ofte har store konsekvenser for resten av livet deres. Vi i Attender jobber for å være proaktive for ungdom som har det vanskelig i skolen, og appen vår attender vil kunne gjøre nettopp dette.</p>
 
-      <div class="content">
-        <form class="skjema">
-          <h2>Kontakt oss</h2>
 
-          <div class="topp" >
-            <div class="inner">
-              <label class="KontaktskjemaTekst">Fornavn</label>
-              <input type="text" class="KontaktskjemaInput" placeholder="Skriv inn fornavn">
-            </div>
-            <div class="inner">
-              <label class="KontaktskjemaTekst">Etternavn</label>
-              <input type="text" class="KontaktskjemaInput" placeholder="Skriv inn etternavn">
-            </div>
-            <div class="inner">
-              <label class="KontaktskjemaTekst">E-post</label>
-              <input type="email" class="KontaktskjemaInput" placeholder="Skriv inn E-post">
-            </div>
+        <form id="Hele" action="OmOss.html" method="post">
+          <h1>kontakt oss</h1>
+
+          <div class="Del1">
+            <input type="text" name="" value=""placeholder="Skriv inn fornavn">
           </div>
 
-          <div class="bunn">
-              <label class="KontaktskjemaTekst">Melding</label>
-              <textarea class="KontaktskjemaInput" placeholder="Still oss et spørsmål eller gi oss en tilbakemelding"></textarea>
+          <div class="Del1">
+            <input type="text" name="" value=""placeholder="Skriv inn etternavn">
           </div>
 
-          <input id="input" type="submit" value="Send melding">
+          <div class="Del1">
+            <input type="text" name="" value="" placeholder="Skriv inn E-post">
+          </div>
+
+          <div id="Del2">
+            <textarea placeholder="Still oss et spørsmål eller gi oss en tilbakemelding"></textarea>
+          </div>
+
+          <input id="Knapp" type="submit" value="send">
+
         </form>
-      </div>
+
     </main>
 
     <footer>
