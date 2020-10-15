@@ -1,4 +1,3 @@
-
 /* ------------------------------------------Generelt for alle sidene*/
 body {
   margin: 0;
@@ -19,11 +18,9 @@ h2 {
 }
 
 #navbar {
-
   padding: 1em;
   display: grid;
   grid-auto-columns:1fr 1fr;
-
 }
 
 #links {
@@ -31,7 +28,6 @@ h2 {
   grid-auto-flow: column;
   grid-gap: 1em;
   text-align: center;
-
 }
 
 #Logo {
@@ -56,16 +52,14 @@ a img {
   width: 10vw;
   height: 4vh;
   font-size: 2vw;
-
 }
 
 #links .Link:hover {
   color: #f2a71b;
 }
 
+
 /*----------------------------------------------------------Forside */
-
-
 /* Hele sliden*/
 .Slide {
 
@@ -167,10 +161,7 @@ footer ul li {
   text-align: center;
 }
 
-/* --------------Beskrivelse side.------------------*/
-
-
-
+/* --------------Beskrivelse side------------------*/
 /* Hele sliden*/
 .Slide2 {
 
@@ -232,9 +223,6 @@ footer ul li {
   text-align: center;
 }
 
-
-
-
 #Beskrivelse .BeskrivelseBilde {
   grid-column: 1fr;
   margin-bottom: 2.5%;
@@ -246,8 +234,6 @@ footer ul li {
  font-family:'Roboto Mono', monospace;
 }
 
-
-
 #Beskrivelse .BeskrivelseBilde img {
   display: block;
   max-width: 17vw;
@@ -256,7 +242,7 @@ footer ul li {
   border-radius: 10px/10px;
 }
 
-/* --------------------------------------------------------For skolen/data*/
+/* --------------------------------------------------------For skolen side*/
 #overskrift{
   text-align: center;
 }
@@ -306,7 +292,6 @@ grid-template-columns: 1fr 1fr;
   border-radius: 15px/15px;
 }
 
-
 .link {
   color: black;
   text-decoration: none;
@@ -328,12 +313,12 @@ grid-template-columns: 1fr 1fr;
   width: 60%;
 }
 
-/*Hele formen*/
-.form {
+/*Kontaktskjema*/
+.skjema {
   width: 100%;
 }
 
-.top-form {
+.topp {
   text-align: left;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -342,20 +327,20 @@ grid-template-columns: 1fr 1fr;
   margin-left: 10px;
 }
 
-.inner-form{
+.inner{
   grid-column: 1fr;
   width: 85%;
 }
 
-.bottom-form {
+.bunn {
   text-align: left;
   width: 95%;
   min-height: 65px;
   margin: 10px;
 }
-.form input[type=text],
-.form input[type=email],
-.form textarea {
+.skjema input[type=text],
+.skjema input[type=email],
+.skjema textarea {
   border: 2px solid #fff;
   padding: 10px 5px;
   outline: none;
@@ -364,27 +349,25 @@ grid-template-columns: 1fr 1fr;
   transition: all 0.2s ease;
 }
 
-.form input:focus,
-.form textarea:focus {
+.skjema input:focus,
+.skjema textarea:focus {
   border-color: #4E41A6;
   outline: none;
 }
 
-.bottom-form textarea {
+.bunn textarea {
   height: 80px;
 }
 
 #input[type=submit] {
-  font-size: 1vw;
+  font-size: 1.1vw;
   font-family: 'Roboto Mono', monospace;
-  letter-spacing: 0.2vw;
-  text-transform: uppercase;
   text-align: center;
   color: white;
   background-color: #5C51A6;
   border-color: #4E41A6;
   border-radius: 5px;
-  width: 100px;
+  width: 200px;
   padding: 10px 0;
   cursor: pointer;
 }
@@ -394,19 +377,18 @@ grid-template-columns: 1fr 1fr;
   border-color: #5C51A6;
 }
 
-.KontaktformInput {
+.KontaktskjemaInput {
   font-size: 0.9vw;
   font-family: 'Roboto Mono', monospace;
 }
 
-.KontaktformTekst {
+.KontaktskjemaTekst {
   font-size: 1.3vw;
   font-family: 'Roboto Mono', monospace;
 >>>>>>> 09e2ec6050f1190252c93c0903180b3f763b1a20
 }
 
 /* --------------------------------------------------------------@media for alle sidene*/
-
 @media screen and (max-width: 600px) {
   #Nyheter {
     grid-template-columns: 1fr;
@@ -431,9 +413,5 @@ grid-template-columns: 1fr 1fr;
 
   footer ul li {
     padding-bottom: 2.5%;
-  }
-
-  top-form {
-    grid-template-columns: 1fr;
   }
 }
