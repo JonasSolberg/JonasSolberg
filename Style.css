@@ -67,8 +67,8 @@ a img {
 
 /* Endre str på bildene*/
 .Slide img {
-  height: 90vh;
-  width: auto;
+  width: 90vw;
+  height: auto;
   border-radius: 15px/15px;
 }
 
