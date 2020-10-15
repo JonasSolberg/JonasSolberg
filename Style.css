@@ -180,8 +180,6 @@ footer ul li {
   width: auto;
 }
 
-/*Bildene i sliden*/
-
 /* Dottene */
 .dot2 {
   height: 5px;
@@ -272,6 +270,12 @@ grid-template-columns: 1fr 1fr;
 
 /* -----------------------------------------------------------Om Oss side*/
 
+
+#OmOssOverskirft {
+  text-align: center;
+  margin-top: 5%; 
+}
+
 #BildeOmOss {
   display: block;
   margin-left: auto;
@@ -299,92 +303,73 @@ grid-template-columns: 1fr 1fr;
   text-decoration: underline #4E41A6;
 }
 
-.content {
-  background-color: #ede8f3;
-  display: block;
-  margin: 5% auto 5% auto;
-  padding: 2%;
-  grid-column: 1fr;
-  border-radius: 15px/15px;
-  text-align: center;
-  width: 50%;
-}
-
 /*Hele formen*/
-.form {
-  width: 100%;
-}
 
-.top-form {
-  text-align: left;
+#Hele {
+  background-color: #ede8f3;
+  margin: 2.5% auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 100%;
-  min-height: 65px;
-  margin-left: 10px;
-}
-
-.inner-form{
-  grid-column: 1fr;
-}
-
-.bottom-form {
-  text-align: left;
-  width: 95%;
-  min-height: 65px;
-  margin: 10px;
-}
-.form input[type=text],
-.form input[type=email],
-.form textarea {
-  border: 2px solid #fff;
-  padding: 10px 5px;
-  outline: none;
-  border-radius: 2px;
-  width: 100%;
-  transition: all 0.2s ease;
-}
-
-.form input:focus,
-.form textarea:focus {
-  border-color: #4E41A6;
-  outline: none;
-}
-
-.bottom-form textarea {
-  height: 80px;
-}
-
-#input[type=submit] {
-  font-size: 1vw;
-  font-family: 'Roboto Mono', monospace;
-  letter-spacing: 0.2vw;
-  text-transform: uppercase;
+  grid-template-columns: repeat(3, 1fr);
   text-align: center;
-  color: white;
-  background-color: #5C51A6;
-  border-color: #4E41A6;
-  border-radius: 5px;
-  width: 100px;
-  padding: 10px 0;
-  cursor: pointer;
+  width: 50vw;
+  padding: 2.5%;
+  border-radius: 15px/15px;
 }
 
-#input[type=submit]:hover  {
-  background-color: #6B62A6;
-  border-color: #5C51A6;
+#Hele h1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+
 }
 
-.KontaktformInput {
-  font-size: 0.9vw;
-  font-family: 'Roboto Mono', monospace;
+.Del1 {
+grid-column: 1fr;
+padding-bottom: 5%;
+display: block;
 }
 
-.KontaktformTekst {
-  font-size: 1.3vw;
-  font-family: 'Roboto Mono', monospace;
->>>>>>> 09e2ec6050f1190252c93c0903180b3f763b1a20
+.Del1 input {
+  width: 12vw;
+  height: 3vh;
+
 }
+
+#Del2 {
+display: block;
+grid-column-start: 1;
+grid-column-end: 4;
+padding: 5% 0;
+}
+
+#Del2 textarea {
+  width: 40vw;
+  height: 20vh;
+}
+
+#Knapp {
+  font-family:'Roboto Mono', monospace;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  width: 10vw;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2%;
+  padding: 2%;
+  font-size: 1.5vw;
+
+  background-color: #5c51a6;
+  border-radius: 10px/10px;
+  border: 1px solid #5c51a6;
+}
+
+#Knapp:active {
+  background-color:#f2a71b;
+  border: 1px solid #f2a71b;
+}
+
+
 
 /* --------------------------------------------------------------@media for alle sidene*/
 
@@ -405,6 +390,31 @@ grid-template-columns: 1fr 1fr;
     grid-column-start: 1;
     grid-column-end: 2;
   }
+
+  #Hele {
+    grid-template-columns: 1fr;
+  }
+
+  #Hele h1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  #Hele .Del1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  #Hele #Del2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  #Hele #Knapp {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
 
   footer ul {
     grid-template-columns: repeat(2, 1fr);
