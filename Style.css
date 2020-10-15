@@ -11,6 +11,7 @@ body {
 h1 {
   font-family: 'Roboto Mono', monospace;
   font-size: 3vw;
+  text-align: center;
 }
 
 h2 {
@@ -307,7 +308,7 @@ grid-template-columns: 1fr 1fr;
   grid-column: 1fr;
   border-radius: 15px/15px;
   text-align: center;
-  width: 50%;
+  width: 60%;
 }
 
 /*Hele formen*/
@@ -326,6 +327,7 @@ grid-template-columns: 1fr 1fr;
 
 .inner-form{
   grid-column: 1fr;
+  width: 85%;
 }
 
 .bottom-form {
@@ -414,5 +416,7 @@ grid-template-columns: 1fr 1fr;
     padding-bottom: 2.5%;
   }
 
-
+  top-form {
+    grid-template-columns: 1fr;
+  }
 }
